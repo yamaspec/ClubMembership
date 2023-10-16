@@ -1,9 +1,6 @@
-﻿using FieldValidatorAPI;
+﻿using ClubMembershipApplication.Data;
+using FieldValidatorAPI;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ClubMembershipApplication.FieldValidators
 {
@@ -17,16 +14,14 @@ namespace ClubMembershipApplication.FieldValidators
         delegate bool EmailExistsDel(string emailAddress);
 
         FieldValidatorDel _fieldValidatorDel = null;
-
         RequiredValidDel _requiredValidDel = null;
         StringLengthValidDel _stringLengthValidDel = null;
         DateValidDel _dateValidDel = null;
         PatternMatchValidDel _patternMatchValidDel = null;
         CompareFieldsValidDel _compareFieldsValidDel = null;
-
         EmailExistsDel _emailExistsDel = null;
-
         string[] _fieldArray = null;
+        IRegister _register = null;
 
         public string[] FieldArray
         {
@@ -42,14 +37,15 @@ namespace ClubMembershipApplication.FieldValidators
 
         public FieldValidatorDel ValidatorDel => _fieldValidatorDel;
 
-        public UserRegistrationValidator()
+        public UserRegistrationValidator(IRegister register)
         {
-            
+            _register = register;
         }
 
         public void InitialiseValidatorDelegates()
         {
             _fieldValidatorDel = new FieldValidatorDel(ValidField);
+            _emailExistsDel = new EmailExistsDel(_register.EmailExists);
 
             _requiredValidDel = CommonFieldValidatorFunctions.RequiredFieldValidDel;
             _stringLengthValidDel = CommonFieldValidatorFunctions.StringFieldLengthValidDel;
@@ -75,6 +71,10 @@ namespace ClubMembershipApplication.FieldValidators
                     fieldInvalidMessage = 
                         (fieldInvalidMessage == "" && !_patternMatchValidDel(fieldValue, CommonRegularExpressionValidationPatterns.Email_Address_RegEx_Pattern)) 
                         ? $"You must to enter a valid email address{Environment.NewLine}" 
+                        : fieldInvalidMessage;
+                    fieldInvalidMessage =
+                        (fieldInvalidMessage == "" && !_emailExistsDel(fieldValue))
+                        ? $"Email address already exists{Environment.NewLine}"
                         : fieldInvalidMessage;
                     break;
                 case FieldConstants.UserRegistrationField.FirstName:
@@ -104,7 +104,7 @@ namespace ClubMembershipApplication.FieldValidators
                         : "";
                     fieldInvalidMessage =
                         (fieldInvalidMessage == "" && !_patternMatchValidDel(fieldValue, CommonRegularExpressionValidationPatterns.Strong_Password_RegEx_Pattern))
-                        ? $"Your password must contain at least 1 small-case letter, 1 capital letter, 1 special character and the length should be between 6 - 10 characters{Environment.NewLine}"
+                        ? $"Your password must contain at least 1 small-case letter, 1 capital letter, 1digit, 1 special character and the length should be between 6 - 10 characters{Environment.NewLine}"
                         : fieldInvalidMessage;
                     break;
                 case FieldConstants.UserRegistrationField.PasswordCompare:

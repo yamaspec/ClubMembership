@@ -6,6 +6,7 @@ namespace ClubMembershipApplication
 {
     public static class Factory
     {
+        // Basic Dependency Injection and Dependency Inversion principle.
         public static IView GetMainViewObject()
         {
             ILogin login = new LoginUser();

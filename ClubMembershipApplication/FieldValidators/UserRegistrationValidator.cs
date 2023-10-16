@@ -59,7 +59,7 @@ namespace ClubMembershipApplication.FieldValidators
             fieldInvalidMessage = "";
             FieldConstants.UserRegistrationField userRegistrationField = (FieldConstants.UserRegistrationField)fieldIndex;
             string userRegistrationFieldName = Enum.GetName(typeof(FieldConstants.UserRegistrationField), userRegistrationField);
-            string requiredFieldMessage = $"You must to enter a value for field: {userRegistrationFieldName}{Environment.NewLine}";
+            string requiredFieldMessage = $"You must enter a value for field: {userRegistrationFieldName}";
 
             switch (userRegistrationField)
             {
@@ -70,11 +70,11 @@ namespace ClubMembershipApplication.FieldValidators
                         : "";
                     fieldInvalidMessage = 
                         (fieldInvalidMessage == "" && !_patternMatchValidDel(fieldValue, CommonRegularExpressionValidationPatterns.Email_Address_RegEx_Pattern)) 
-                        ? $"You must to enter a valid email address{Environment.NewLine}" 
+                        ? $"You must enter a valid email address" 
                         : fieldInvalidMessage;
                     fieldInvalidMessage =
-                        (fieldInvalidMessage == "" && !_emailExistsDel(fieldValue))
-                        ? $"Email address already exists{Environment.NewLine}"
+                        (fieldInvalidMessage == "" && _emailExistsDel(fieldValue))
+                        ? $"Email address already exists"
                         : fieldInvalidMessage;
                     break;
                 case FieldConstants.UserRegistrationField.FirstName:
@@ -84,7 +84,7 @@ namespace ClubMembershipApplication.FieldValidators
                         : "";
                     fieldInvalidMessage =
                         (fieldInvalidMessage == "" && !_stringLengthValidDel(fieldValue, FirstName_Min_Length, FirstName_Max_Length))
-                        ? $"The length for field: {userRegistrationFieldName} must be between {FirstName_Min_Length} and {FirstName_Max_Length}{Environment.NewLine}"
+                        ? $"The length for field: {userRegistrationFieldName} must be between {FirstName_Min_Length} and {FirstName_Max_Length}"
                         : fieldInvalidMessage;
                     break;
                 case FieldConstants.UserRegistrationField.LastName:
@@ -94,7 +94,7 @@ namespace ClubMembershipApplication.FieldValidators
                         : "";
                     fieldInvalidMessage =
                         (fieldInvalidMessage == "" && !_stringLengthValidDel(fieldValue, LastName_Min_Length, LastName_Max_Length))
-                        ? $"The length for field: {userRegistrationFieldName} must be between {LastName_Min_Length} and {LastName_Max_Length}{Environment.NewLine}"
+                        ? $"The length for field: {userRegistrationFieldName} must be between {LastName_Min_Length} and {LastName_Max_Length}"
                         : fieldInvalidMessage;
                     break;
                 case FieldConstants.UserRegistrationField.Password:
@@ -104,7 +104,7 @@ namespace ClubMembershipApplication.FieldValidators
                         : "";
                     fieldInvalidMessage =
                         (fieldInvalidMessage == "" && !_patternMatchValidDel(fieldValue, CommonRegularExpressionValidationPatterns.Strong_Password_RegEx_Pattern))
-                        ? $"Your password must contain at least 1 small-case letter, 1 capital letter, 1digit, 1 special character and the length should be between 6 - 10 characters{Environment.NewLine}"
+                        ? $"Your password does not comply with security policy"
                         : fieldInvalidMessage;
                     break;
                 case FieldConstants.UserRegistrationField.PasswordCompare:
@@ -114,7 +114,7 @@ namespace ClubMembershipApplication.FieldValidators
                         : "";
                     fieldInvalidMessage =
                         (fieldInvalidMessage == "" && !_compareFieldsValidDel(fieldValue, fieldArray[(int)FieldConstants.UserRegistrationField.Password]))
-                        ? $"Your entry did not match your password{Environment.NewLine}"
+                        ? $"Your entry did not match your password"
                         : fieldInvalidMessage;
                     break;
                 case FieldConstants.UserRegistrationField.DateOfBirth:
@@ -124,7 +124,7 @@ namespace ClubMembershipApplication.FieldValidators
                         : "";
                     fieldInvalidMessage =
                         (fieldInvalidMessage == "" && !_dateValidDel(fieldValue, out DateTime validDateTime))
-                        ? $"You did not enter a valid date{Environment.NewLine}"
+                        ? $"You did not enter a valid date"
                         : fieldInvalidMessage;
                     break;
                 case FieldConstants.UserRegistrationField.PhoneNumber:
@@ -134,7 +134,7 @@ namespace ClubMembershipApplication.FieldValidators
                         : "";
                     fieldInvalidMessage =
                         (fieldInvalidMessage == "" && !_patternMatchValidDel(fieldValue, CommonRegularExpressionValidationPatterns.AU_Phone_Number_RegEx_Pattern))
-                        ? $"You did not enter a valid Australian phone number{Environment.NewLine}"
+                        ? $"You did not enter a valid Australian phone number"
                         : fieldInvalidMessage;
                     break;
                 case FieldConstants.UserRegistrationField.AddressFirstLine:
@@ -162,7 +162,7 @@ namespace ClubMembershipApplication.FieldValidators
                         : "";
                     fieldInvalidMessage =
                         (fieldInvalidMessage == "" && !_patternMatchValidDel(fieldValue, CommonRegularExpressionValidationPatterns.AU_PostCode_RegEx_Pattern))
-                        ? $"You did not enter a valid Australian Post Code{Environment.NewLine}"
+                        ? $"You did not enter a valid Australian Post Code"
                         : fieldInvalidMessage;
                     break;
                 default:

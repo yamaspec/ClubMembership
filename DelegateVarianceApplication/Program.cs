@@ -46,8 +46,8 @@ namespace DelegateVarianceApplication
             LogICECarDetailsDel logICECarDetailsDel = LogCarDetails;
             LogEVCarDetailsDel logEVCarDetailsDel = LogCarDetails;
 
-            logICECarDetailsDel(iceCar as ICECar);
-            logEVCarDetailsDel(evCar as EVCar);
+            logICECarDetailsDel(iceCar as ICECar);   // Delegate parameter points to a more derived Car class (ICECar/EVCar subclasses).
+            logEVCarDetailsDel(evCar as EVCar);      // LogCarDetails method parameter points to a less derived class (Car base class).
 
             Console.ReadKey();
 

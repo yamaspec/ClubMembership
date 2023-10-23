@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FieldValidatorAPI", "FieldV
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegateVarianceApplication", "DelegateVarianceApplication\DelegateVarianceApplication.csproj", "{84BC1953-685C-4E1C-8042-8549BC0D3BD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericDelegatesApplication", "GenericDelegatesApplication\GenericDelegatesApplication.csproj", "{0759D0B7-79D5-4DE5-9144-6743B7A60B5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericDelegatesApplication", "GenericDelegatesApplication\GenericDelegatesApplication.csproj", "{0759D0B7-79D5-4DE5-9144-6743B7A60B5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncCallbackDelegateApplication", "AsyncCallbackDelegateApplication\AsyncCallbackDelegateApplication.csproj", "{145880A6-DEB4-4D5D-9773-2CFE51E12E62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{0759D0B7-79D5-4DE5-9144-6743B7A60B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0759D0B7-79D5-4DE5-9144-6743B7A60B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0759D0B7-79D5-4DE5-9144-6743B7A60B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{145880A6-DEB4-4D5D-9773-2CFE51E12E62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{145880A6-DEB4-4D5D-9773-2CFE51E12E62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{145880A6-DEB4-4D5D-9773-2CFE51E12E62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{145880A6-DEB4-4D5D-9773-2CFE51E12E62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

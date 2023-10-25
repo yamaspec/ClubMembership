@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericDelegatesApplication
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncCallbackDelegateApplication", "AsyncCallbackDelegateApplication\AsyncCallbackDelegateApplication.csproj", "{145880A6-DEB4-4D5D-9773-2CFE51E12E62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThresholdReachedEventApplication", "ThresholdReachedEventApplication\ThresholdReachedEventApplication.csproj", "{D0651AFD-053F-425D-AD17-6BC0823DC5DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{145880A6-DEB4-4D5D-9773-2CFE51E12E62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{145880A6-DEB4-4D5D-9773-2CFE51E12E62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{145880A6-DEB4-4D5D-9773-2CFE51E12E62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0651AFD-053F-425D-AD17-6BC0823DC5DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0651AFD-053F-425D-AD17-6BC0823DC5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0651AFD-053F-425D-AD17-6BC0823DC5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0651AFD-053F-425D-AD17-6BC0823DC5DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

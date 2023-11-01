@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingSurvaillanceSystemA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsBasics", "GenericsBasics\GenericsBasics.csproj", "{C1461003-C578-4F40-B320-CC14A5DEB83C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericBubbleSortApplication", "GenericBubbleSortApplication\GenericBubbleSortApplication.csproj", "{2DE81240-E195-4DF1-A367-FA2C318A0AEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -269,6 +271,26 @@ Global
 		{C1461003-C578-4F40-B320-CC14A5DEB83C}.Release|x64.Build.0 = Release|Any CPU
 		{C1461003-C578-4F40-B320-CC14A5DEB83C}.Release|x86.ActiveCfg = Release|Any CPU
 		{C1461003-C578-4F40-B320-CC14A5DEB83C}.Release|x86.Build.0 = Release|Any CPU
+		{2DE81240-E195-4DF1-A367-FA2C318A0AEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DE81240-E195-4DF1-A367-FA2C318A0AEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DE81240-E195-4DF1-A367-FA2C318A0AEA}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{2DE81240-E195-4DF1-A367-FA2C318A0AEA}.Debug|ARM.Build.0 = Debug|Any CPU
+		{2DE81240-E195-4DF1-A367-FA2C318A0AEA}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{2DE81240-E195-4DF1-A367-FA2C318A0AEA}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{2DE81240-E195-4DF1-A367-FA2C318A0AEA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2DE81240-E195-4DF1-A367-FA2C318A0AEA}.Debug|x64.Build.0 = Debug|Any CPU
+		{2DE81240-E195-4DF1-A367-FA2C318A0AEA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2DE81240-E195-4DF1-A367-FA2C318A0AEA}.Debug|x86.Build.0 = Debug|Any CPU
+		{2DE81240-E195-4DF1-A367-FA2C318A0AEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DE81240-E195-4DF1-A367-FA2C318A0AEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DE81240-E195-4DF1-A367-FA2C318A0AEA}.Release|ARM.ActiveCfg = Release|Any CPU
+		{2DE81240-E195-4DF1-A367-FA2C318A0AEA}.Release|ARM.Build.0 = Release|Any CPU
+		{2DE81240-E195-4DF1-A367-FA2C318A0AEA}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{2DE81240-E195-4DF1-A367-FA2C318A0AEA}.Release|ARM64.Build.0 = Release|Any CPU
+		{2DE81240-E195-4DF1-A367-FA2C318A0AEA}.Release|x64.ActiveCfg = Release|Any CPU
+		{2DE81240-E195-4DF1-A367-FA2C318A0AEA}.Release|x64.Build.0 = Release|Any CPU
+		{2DE81240-E195-4DF1-A367-FA2C318A0AEA}.Release|x86.ActiveCfg = Release|Any CPU
+		{2DE81240-E195-4DF1-A367-FA2C318A0AEA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -27,9 +27,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericsBasics", "GenericsB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericBubbleSortApplication", "GenericBubbleSortApplication\GenericBubbleSortApplication.csproj", "{2DE81240-E195-4DF1-A367-FA2C318A0AEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HardwareWarehouseManagementSystem", "HardwareWarehouseManagementSystem\HardwareWarehouseManagementSystem.csproj", "{300B5765-C624-4CF6-87D4-90B2E450D853}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HardwareWarehouseManagementSystem", "HardwareWarehouseManagementSystem\HardwareWarehouseManagementSystem.csproj", "{300B5765-C624-4CF6-87D4-90B2E450D853}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseManagementSystemAPI", "WarehouseManagementSystemAPI\WarehouseManagementSystemAPI.csproj", "{3432E9B7-8509-408E-80C2-A437AD9A9270}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseManagementSystemAPI", "WarehouseManagementSystemAPI\WarehouseManagementSystemAPI.csproj", "{3432E9B7-8509-408E-80C2-A437AD9A9270}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalProductInventoryApplication", "DigitalProductInventoryApplication\DigitalProductInventoryApplication.csproj", "{99C4053B-F031-4699-814A-C8F0B9B4BD67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -335,6 +337,26 @@ Global
 		{3432E9B7-8509-408E-80C2-A437AD9A9270}.Release|x64.Build.0 = Release|Any CPU
 		{3432E9B7-8509-408E-80C2-A437AD9A9270}.Release|x86.ActiveCfg = Release|Any CPU
 		{3432E9B7-8509-408E-80C2-A437AD9A9270}.Release|x86.Build.0 = Release|Any CPU
+		{99C4053B-F031-4699-814A-C8F0B9B4BD67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99C4053B-F031-4699-814A-C8F0B9B4BD67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99C4053B-F031-4699-814A-C8F0B9B4BD67}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{99C4053B-F031-4699-814A-C8F0B9B4BD67}.Debug|ARM.Build.0 = Debug|Any CPU
+		{99C4053B-F031-4699-814A-C8F0B9B4BD67}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{99C4053B-F031-4699-814A-C8F0B9B4BD67}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{99C4053B-F031-4699-814A-C8F0B9B4BD67}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{99C4053B-F031-4699-814A-C8F0B9B4BD67}.Debug|x64.Build.0 = Debug|Any CPU
+		{99C4053B-F031-4699-814A-C8F0B9B4BD67}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{99C4053B-F031-4699-814A-C8F0B9B4BD67}.Debug|x86.Build.0 = Debug|Any CPU
+		{99C4053B-F031-4699-814A-C8F0B9B4BD67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99C4053B-F031-4699-814A-C8F0B9B4BD67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99C4053B-F031-4699-814A-C8F0B9B4BD67}.Release|ARM.ActiveCfg = Release|Any CPU
+		{99C4053B-F031-4699-814A-C8F0B9B4BD67}.Release|ARM.Build.0 = Release|Any CPU
+		{99C4053B-F031-4699-814A-C8F0B9B4BD67}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{99C4053B-F031-4699-814A-C8F0B9B4BD67}.Release|ARM64.Build.0 = Release|Any CPU
+		{99C4053B-F031-4699-814A-C8F0B9B4BD67}.Release|x64.ActiveCfg = Release|Any CPU
+		{99C4053B-F031-4699-814A-C8F0B9B4BD67}.Release|x64.Build.0 = Release|Any CPU
+		{99C4053B-F031-4699-814A-C8F0B9B4BD67}.Release|x86.ActiveCfg = Release|Any CPU
+		{99C4053B-F031-4699-814A-C8F0B9B4BD67}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

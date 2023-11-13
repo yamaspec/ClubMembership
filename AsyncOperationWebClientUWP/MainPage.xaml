@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="AsyncOperationWebClientUWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AsyncOperationWebClientUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button x:Name="btnLocalOperation" Content="Local Operation" Margin="173,119,0,0" VerticalAlignment="Top" Height="89" Width="185" Click="btnLocalOperation_Click"/>
+        <Button x:Name="btnWebAPICall" Content="Web API Call" Margin="173,263,0,0" VerticalAlignment="Top" Height="88" Width="185" Click="btnWebAPICall_Click"/>
+        <ListView x:Name="ListViewOutput" Margin="720,0,0,0"/>
+
+    </Grid>
+</Page>
